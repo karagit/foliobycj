@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-export default function() {
+export default function ComingSoon() {
   return (
     <div className="coming-soon h-screen">
       <div className="flex justify-center items-center flex-col h-full">
