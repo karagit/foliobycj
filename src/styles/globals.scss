@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./variables.scss";
+@import "./coming-soon.scss";
+
+body {
+  font-family: "Poppins";
+}
