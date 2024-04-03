@@ -1,5 +1,14 @@
-$primary: #C5664E;
-$base: #52575E;
+$default: #EEEEEE;
+$blue: #76ABAE;
+$gray: #31363F;
+$dark: #222831;
 
-$text-primary: $primary;
-$text-color: $base;
+.color-default { color: $default; }
+.color-blue { color: $blue; }
+.color-gray { color: $gray; }
+.color-dark { color: $dark; }
+
+.bg-default { background-color: $default; }
+.bg-blue { background-color: $blue; }
+.bg-gray { background-color: $gray; }
+.bg-dark { background-color: $dark; }

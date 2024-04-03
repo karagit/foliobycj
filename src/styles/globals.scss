@@ -1,9 +1,131 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./variables.scss";
-@import "./coming-soon.scss";
+@import "./_variables.scss";
 
 body {
+  color: $default;
   font-family: "Poppins";
+  font-weight: 300;
+}
+
+.btn {
+  background-color: $blue;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: $default;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 10px 25px;
+  transition: all 700ms;
+
+  &:hover {
+    background-color: $default;
+    border-color: $blue;
+    color: $blue
+  }
+}
+
+.arrow-down {
+  animation: bounce 3s infinite;
+}
+
+.section {
+  border-top: 1px solid $gray;
+  padding: 100px 0;
+  position: relative;
+  
+  &.footer {
+    padding: 50px 0;
+  }
+
+  &-title {
+    color: $default;
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+}
+
+.banner,
+.section {
+  background: $gray url("/img/bg-banner.jpg") no-repeat center/cover;
+}
+
+.tile {
+  margin-bottom: 25px;
+  width: 48%;
+
+  &-link {
+    img {
+      filter: grayscale(1);
+      transition: all 1.5s ease;
+    }
+
+    &:hover {
+      .tile-overlay {
+        opacity: 1;
+      }
+
+      img {
+        filter: none;
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &-overlay {
+    transition: all 0.5s;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+
+    &-title {
+      font-size: 3rem;
+    }
+  }
+
+  .card::after {
+    bottom: -45px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    transform: rotate(90deg);
+    top: auto;
+  }
+
+  .tile {
+    width: 100%;
+  }
 }
