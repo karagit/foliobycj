@@ -7,8 +7,7 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-6 lg-px-8">
         <h2 className="section-title text-center">About <span className="text-blue">Me</span></h2>
         <p className="text-center lg:text-xl">
-          An experienced frontend developer with a keen eye for design details <br className="hidden lg:block"/>
-          and a passion for clean and maintainable code.
+          I'm a frontend developer who has a keen eye for design details and a passion for clean, maintainable code. <br className="hidden lg:block"/> I also ensure that I deliver high-quality solutions that meet both user needs and business objectives.
         </p>
         <div className="flex justify-between mt-12 flex-wrap space-x-0 lg:space-x-4 lg:flex-nowrap lg:mb-12">
           <Card />
