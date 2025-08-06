@@ -1,26 +1,26 @@
 export const Works = [
   {
-    src: "/img/img-r1estate.jpg",
-    href: "https://www.r1estate.jp/",
-    name: "R1 Estate",
+    src: "/img/alc-co.png",
+    href: "https://www.alc.co.jp/",
+    name: "ALC Co.",
     tag: "WordPress", 
   },
   {
-    src: "/img/img-fujidenso.jpg",
-    href: "https://www.fuji-denso.jp/",
-    name: "Fujidenso",
-    tag: "WordPress",
+    src: "/img/recruit.png",
+    href: "https://recruit.alc.co.jp/newgrad/",
+    name: "ALC Recruit",
+    tag: "HTML/SCSS/JS", 
   },
   {
-    src: "/img/img-smiles.jpg",
-    href: "https://smiles-design.com/",
-    name: "Smiles Design",
-    tag: "WordPress",
+    src: "/img/booco.png",
+    href: "https://www.booco.jp/",
+    name: "booco",
+    tag: "HTML/SCSS/JS",
   },
   {
-    src: "/img/img-suntect.jpg",
-    href: "https://www.serendip-tec.com/",
-    name: "Suntect",
-    tag: "WordPress",
+    src: "/img/hearing-marathon.png",
+    href: "https://www.hearingmarathon.com/",
+    name: "Hearing Marathon",
+    tag: "HTML/SCSS/JS",
   }
 ];

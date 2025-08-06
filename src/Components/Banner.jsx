@@ -8,7 +8,7 @@ export default function Banner() {
           <div className="w-full">
             <p className="text-base font-light mb-4 lg:text-3xl">I am</p>
             <h1 className="text-5xl font-bold lg:text-8xl">Carla Jean</h1>
-            <p className="text-base font-light mt-5 mb-8 lg:text-3xl">An experienced frontend developer based in Manila, PH <br className="hidden lg:block"/> who specializes in web development. Interested in working with me?</p>
+            <p className="text-base font-light mt-5 mb-8 lg:text-3xl">An experienced frontend developer based in Manila PH, <br className="hidden lg:block"/> who specializes in web development. Interested in working with me?</p>
             <a href="mailto:carlajeanmp@gmail.com" className="btn uppercase inline-block tracking-wider">Message me</a>
             <hr className="text-light-gray w-60 mx-auto my-10" />
             <div className="flex justify-center items-center space-x-5">
