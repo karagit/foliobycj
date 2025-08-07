@@ -6,13 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'default': '#EEEEEE',
-        'blue': '#76ABAE',
-        'gray': '#31363F',
-        'light-gray': '#3E4958',
-        'dark': '#222831',
-        'dark-blue': '#1D2026',
-      }
+        'default': '#111111',
+        'light': '#FFFCF2',
+        'dark': '#181716', 
+        'accent': '#EB5E28',
+      },
+      fontFamily: {
+        'vogue-text': ['Very Vogue Text', 'sans-serif'],
+        'vogue-text-italic': ['Very Vogue Italic', 'sans-serif'],
+      },
     },
   },
   plugins: [

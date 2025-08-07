@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables */
+:root {
+  --default-color: #11111;
+  --light-color: #FFFCF2;
+  --dark-color: #181716;
+  --accent-color: #EB5E28;
+  --font-size: 16px;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Very Vogue Text';
+    src: url('/fonts/VeryVogueText.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Very Vogue Italic';
+    src: url('/fonts/VeryVogueTextItalic.otf') format('opentype');
+  }
+
+  body {
+    @apply bg-default text-light;
+    font-size: 16px;
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* Banner */
+.banner {
+  font-size: 12.5rem;
+}
