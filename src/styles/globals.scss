@@ -127,5 +127,9 @@ body {
 
   .tile {
     width: 100%;
+
+    &-link:hover img {
+      transform: none;
+    }
   }
 }
