@@ -7,7 +7,7 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="favicon.png" />
       </Head>
-      <title>Portfolio by Carla Jean - Web Developer & Designer in the Philippines</title>
+      <title>Portfolio by Carla Jean - Web Designer & Developer in the Philippines</title>
       <body>
         <Main />
         <NextScript />

@@ -34,5 +34,17 @@ html {
 
 /* Banner */
 .banner {
-  font-size: 12.5rem;
+  &-title {
+    height: calc(100% - 3.125rem);
+  }
+
+  & h2 {
+    font-size: 12.5rem;
+  }
+}
+
+.menu {
+  &-title {
+    font-size: 9.375rem;
+  }
 }

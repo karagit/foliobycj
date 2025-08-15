@@ -1,13 +1,13 @@
-import NavigationBar from "../Components/NavigationBar";
+import Header from "./Header";
 
 export default function Banner() {
   return (
-    <div className="banner lg:h-screen">
-      <div className="mx-auto max-w-9xl px-6 lg-px-8 h-full">
-        <div className="h-full flex items-center justify-center">
+    <div className="banner h-screen">
+      <div className="px-20 py-5 h-full">
+        <div className="flex items-center justify-center banner-title">
           <h2 className="text-center font-vogue-text-italic">PORTFOLIO.</h2>
         </div>
-        <NavigationBar />
+        <Header />
       </div>
     </div>
   )

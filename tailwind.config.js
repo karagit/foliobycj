@@ -9,6 +9,7 @@ module.exports = {
         'default': '#111111',
         'light': '#FFFCF2',
         'dark': '#181716', 
+        'dark-400': '#403D39',
         'accent': '#EB5E28',
       },
       fontFamily: {

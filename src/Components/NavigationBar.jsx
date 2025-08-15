@@ -1,5 +1,7 @@
-import { Disclosure } from "@headlessui/react";
-import { XMarkIcon, Bars3BottomRightIcon, DocumentTextIcon, SunIcon } from "@heroicons/react/24/outline";
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "ABOUT", href: "#about" },
@@ -9,61 +11,35 @@ const navigation = [
 ];
 
 export default function NavigationBar() {
-  return (
-    <Disclosure as="nav">
-      {({ open }) => (
-        <>
-          <div className="mx-auto max-w-9xl px-2 sm:px-6 lg-px-8">
-            <div className="relative h-16 flex items-center justify-between">
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                <Disclosure.Button className="color-default relative inline-flex items-center justify-center rounded-md p-2">
-                  <span className="absolute -inset-0.5"/>
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3BottomRightIcon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex items-center justify-between w-full">
-                <a href="#" className="font-vogue-text-italic text-4xl w-1/2">CJMP</a>
-                <div className="flex w-1/2">
-                  <div className="flex">
-                    
-                  </div>
-                </div>
-                <div className="hidden sm:flex space-x-4">
-                  {navigation.map((item, index) => (
-                    <a
-                      key={index}
-                      href={item.href}
-                      className="tracking-widest text-sm hover:transition-all hover:duration-700 hover:text-accent"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+  const [open, setOpen] = useState(false);
+  const [click, setClick] = useState(false);
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className="block p-3 tracking-widest text-sm hover:transition-all hover:duration-700 hover:text-accent"
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
+  return (
+    <nav>
+      <button
+        onClick={() => setOpen(!open)}
+        aria-label="Toggle navigation"
+        className="h-6 w-6"
+      >
+        {open && !click ? (
+          <XMarkIcon className="text-dark-400 relative z-10" />
+        ) : (
+          <Bars3Icon />
+        )}
+      </button>
+
+      {(navigation && open && !click) && (
+        <div className="bg-light w-full h-full absolute top-0 left-0 py-12 px-20">
+          <p className="font-vogue-text-italic text-dark-400 menu-title">CONTENTS.</p>
+          <ul className="ml-72">
+            {navigation.map((item, index) => (
+              <li key={index} className="mb-6" onClick={() => setClick(!click)}>
+                <Link href={item.href} className="text-dark-400 text-7xl font-vogue-text-italic tracking-wider"><span className="text-accent">{`0${index+1}. `}</span>{item.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
-    </Disclosure>
+    </nav>
   )
 }
