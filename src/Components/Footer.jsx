@@ -1,9 +1,11 @@
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="section footer">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg-px-8">
         <div className="flex justify-between flex-col items-center text-center lg:flex-row">
-          <p>© 2024 Portfolio by Carla Jean. All rights reserved. </p>
+          <p>&copy; {currentYear} Portfolio by Carla Jean. All rights reserved. </p>
           <div className="flex justify-center items-center space-x-5 mt-5 lg:mt-0">
             <a
               href="https://www.linkedin.com/in/carlajeanmp/"

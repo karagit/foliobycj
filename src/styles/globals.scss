@@ -54,9 +54,6 @@ body {
 }
 
 .tile {
-  margin-bottom: 25px;
-  width: 48%;
-
   &-link {
     img {
       filter: grayscale(1);
@@ -126,8 +123,6 @@ body {
   }
 
   .tile {
-    width: 100%;
-
     &-link:hover img {
       transform: none;
     }

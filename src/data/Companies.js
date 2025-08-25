@@ -2,7 +2,7 @@ export const Companies = [
   {
     name: "Frontend Developer",
     year: "2024 - Present",
-    description: "Develop websites for products by mother company using WordPress with the implementation of ACF, RankMath, CF7, and more.",
+    description: "Develop websites for different products owned by the company using WordPress or basic HTML with the implementation of ACF, Rank Math, CF7, and more.",
     tech: [
       { name: "WordPress" },
       { name: "ACF" },
